@@ -1,0 +1,53 @@
+body {
+    background-color: green;
+}
+
+#container {
+    position: relative;
+    width: 80vw;
+    height: 60vh;
+    border: 2px solid black;
+    margin: auto;
+}
+
+#questionContainer {
+    position: relative;
+    width: 40vw;
+    height: 40vh;
+    border: 2px solid black;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#question {
+    width: 25vw;
+    margin: auto;
+    text-align: center;
+}
+
+#answerButtons {
+    width: 15vw;
+    height: 15vh;
+    margin: auto;
+}
+
+.btn {
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#startBtn {
+    position: absolute;
+    width: 10vw;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+#nextBtn {
+    position: absolute;
+    width: 10vw;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+}
