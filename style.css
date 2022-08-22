@@ -1,5 +1,26 @@
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
 body {
     background-color: green;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body.correct {
+    --hue: var(--hue-correct);
+}
+
+body.wrong {
+    --hue: var(--hue-wrong);
 }
 
 #container {
@@ -12,11 +33,12 @@ body {
 
 #questionContainer {
     position: relative;
-    width: 40vw;
-    height: 40vh;
+    width: 50vw;
+    height: 50vh;
     border: 2px solid black;
-    margin: auto;
     border-radius: 10px;
+    background-color: #F8F0E3;
+    box-shadow: 0 0 10px 2px;
 }
 
 #question {
@@ -26,28 +48,50 @@ body {
 }
 
 #answerButtons {
-    width: 15vw;
-    height: 15vh;
-    margin: auto;
+    width: 20vw;
+    height: 30vh;
+    margin: 50px auto;
 }
 
 .btn {
+    background-color: hsl(var(--hue), 100%, 50%);
     justify-content: center;
     border-radius: 10px;
+}
+
+.btn:hover {
+    border-color: aqua;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
 }
 
 #startBtn {
     position: absolute;
     width: 10vw;
-    left: 0;
-    bottom: 0;
+    left: 10px;
+    bottom: 10px;
     border-radius: 10px;
 }
 
 #nextBtn {
     position: absolute;
     width: 10vw;
-    right: 0;
-    bottom: 0;
+    right: 10px;
+    bottom: 10px;
     border-radius: 10px;
+}
+
+.btnGrid {
+    display: grid;
+    gap: 10px 0px;
+}
+
+#question {
+    margin: 20px auto;
 }
