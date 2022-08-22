@@ -23,22 +23,15 @@ body.wrong {
     --hue: var(--hue-wrong);
 }
 
-#container {
+.container {
     position: relative;
     width: 80vw;
-    height: 60vh;
+    height: 80vh;
     border: 2px solid black;
     margin: auto;
-}
-
-#questionContainer {
-    position: relative;
-    width: 50vw;
-    height: 50vh;
-    border: 2px solid black;
-    border-radius: 10px;
     background-color: #F8F0E3;
     box-shadow: 0 0 10px 2px;
+    border-radius: 10px;
 }
 
 #question {
@@ -50,13 +43,14 @@ body.wrong {
 #answerButtons {
     width: 20vw;
     height: 30vh;
-    margin: 50px auto;
+    margin: 20% auto;
 }
 
 .btn {
     background-color: hsl(var(--hue), 100%, 50%);
     justify-content: center;
     border-radius: 10px;
+    font-size: 1.2rem;
 }
 
 .btn:hover {
@@ -71,20 +65,21 @@ body.wrong {
     --hue: var(--hue-wrong);
 }
 
-#startBtn {
+#nextBtn {
     position: absolute;
-    width: 10vw;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    max-width: 20vw;
     left: 10px;
     bottom: 10px;
     border-radius: 10px;
 }
 
-#nextBtn {
-    position: absolute;
-    width: 10vw;
-    right: 10px;
-    bottom: 10px;
-    border-radius: 10px;
+.controls {
+    display: flex;
+    margin-top: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
 .btnGrid {
@@ -94,4 +89,8 @@ body.wrong {
 
 #question {
     margin: 20px auto;
+}
+
+.hide {
+    display: none;
 }
