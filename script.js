@@ -59,7 +59,8 @@ function selectAnswer(e) {
         nextButton.classList.remove('hide')
     } else {
         startButton.innerHTML = 'Restart'
-        startButton.classList.remove('hide')
+        startButton.classList.remove('hide');
+        endPopup()
     }
 }
 
@@ -73,6 +74,13 @@ function setStatusClass(element, correct) {
 function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
+}
+
+function endPopup() {
+    questionContainer.classList.add('hide')
+    if (startButton == clicked) {
+        questionContainer.classList.remove('hide')
+    }
 }
 
 let questions = [
@@ -113,7 +121,7 @@ let questions = [
         ]
     },
     {
-        question: 'What color is the tongue of a giraffe?',
+        question: "What color is a giraffe's tongue?",
         answers: [
             {text: 'Brown', correct: false},
             {text: 'Pink', correct: false},
@@ -158,7 +166,7 @@ let questions = [
         ]
     },
     {
-        question: "How many eyes do a catapillar's have?",
+        question: "How many eyes does a caterpillar have?",
         answers: [
             {text: 'Twelve', correct: true},
             {text: 'Six', correct: false},
