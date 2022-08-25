@@ -5,24 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TriviAnimals</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
+
+    <header>
+        <div class="header">
+        <h1 class="logo logoBackground">TriviAnimals</h1>
+        </div>
+    </header>
+    
     <div class="container">
-        <div id="questionContainer">
-            <div id="question">Question</div>
+        <div id="titleContainer">
+            <h2 class="homeTitle">Welcome to the TriviAnimals quiz!</h2>
+        </div>
+        <div class="nameInput">
+            <form action="javascript:void(0)" method="get" class="playerForm">
+                <label for="playerName"></label>
+                <input type="text" id="playerName" placeholder="Name" maxlength="12" required>
+            </form>
+            <div class="formStartBtn">
+                <button id="startBtn" class="startBtn btn">Start</button>
+            </div>
+        </div>
+        <div id="questionContainer" class="hide">
+            <div id="question"><h2>Question</h2></div>
             <div id="answerButtons" class="btnGrid">
                 <button class="btn">Answer 1</button>
                 <button class="btn">Answer 2</button>
                 <button class="btn">Answer 3</button>
                 <button class="btn">Answer 4</button>
-            </div>
+            </div>   
+        </div> 
+        <div class="controls">
+            <button id="nextBtn" class="nextBtn hide">Next</button>
         </div>
-       <div class="controls">
-         <button id="startBtn" class="startBtn btn">Start</button>
-         <button id="nextBtn" class="nextBtn btn hide">Next</button>
-       </div>
     </div>
 
 <script src="script.js"></script>

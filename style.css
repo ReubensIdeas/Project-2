@@ -6,12 +6,17 @@
     --hue-correct: 145;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-image: url("https://i.imgur.com/x8hTYUG.jpg");
+    background-size: cover;
     width: 100vw;
     height: 100vh;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +74,7 @@ body.wrong {
 #question {
     font-size: 2.5rem;
     font-weight: 600;
-    width: 60vw;
+    width: 80vw;
     margin: auto;
     text-align: center;
     color: white;
@@ -136,8 +141,8 @@ body.wrong {
     text-transform: uppercase;
     padding: 20px 10px;
     width: 40vw;
-    height: 25vh;
-    margin-top: 22.5vh;
+    height: 10vh;
+    margin-top: 5vh;
 }
 
 .controls {
@@ -149,6 +154,39 @@ body.wrong {
 .btnGrid {
     display: grid;
     gap: 10px 0px;
+}
+
+#titleContainer {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    margin-top: 20vh;
+}
+
+.homeTitle {
+    color: gold;
+    display: flex;
+    margin: auto;
+}
+
+@media only screen and (min-width: 650px) {
+    .nameInput {
+        margin-top: 5% !important;
+    }
+}
+
+.nameInput {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    margin-left: 25%;
+}
+
+#playerName {
+    width: 40vw;
+    height: 5vh;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .hide {
