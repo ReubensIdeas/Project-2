@@ -3,6 +3,7 @@ let questionElement = document.getElementById('question');
 let startButton = document.getElementById('startBtn');
 let nextButton = document.getElementById('nextBtn');
 let answerButton = document.getElementById('answerButtons');
+let nameInput = document.getElementsByClassName('nameInput');
 
 let shuffledQuestions, currentQuestionIndex;
 

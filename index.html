@@ -17,18 +17,10 @@
     </header>
     
     <div class="container">
-        <div id="titleContainer">
-            <h2 class="homeTitle">Welcome to the TriviAnimals quiz!</h2>
-        </div>
-        <div class="nameInput">
-            <form action="javascript:void(0)" method="get" class="playerForm">
+            <!--<form action="javascript:void(0)" method="get" class="playerForm nameInput">
                 <label for="playerName"></label>
-                <input type="text" id="playerName" placeholder="Name" maxlength="12" required>
-            </form>
-            <div class="formStartBtn">
-                <button id="startBtn" class="startBtn btn">Start</button>
-            </div>
-        </div>
+                <input type="text" id="playerName" placeholder="Name" maxlength="12" oninput='highscores(this.value)' required>
+            </form>-->
         <div id="questionContainer" class="hide">
             <div id="question"><h2>Question</h2></div>
             <div id="answerButtons" class="btnGrid">
@@ -40,6 +32,7 @@
         </div> 
         <div class="controls">
             <button id="nextBtn" class="nextBtn hide">Next</button>
+            <button id="startBtn" class="startBtn btn">Start</button>
         </div>
     </div>
 

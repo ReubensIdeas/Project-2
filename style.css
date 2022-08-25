@@ -52,7 +52,7 @@ body.wrong {
 .container {
     position: relative;
     width: 80vw;
-    height: 70vh;
+    height: 80vh;
     border: 2px solid black;
     margin: auto;
     background-color: darkslategrey;
@@ -124,12 +124,19 @@ body.wrong {
     color: #FFFDD0;
 }
 
+@media only screen and (min-width: 650px) {
+    #nextBtn {
+        width: 10vw !important;
+        height: 7vh !important;
+    }
+}
+
 #nextBtn {
     position: absolute;
     background-color: gold;
     font-size: 1.5rem;
-    padding: 10px 20px;
-    width: 10vw;
+    width: 25vw;
+    height: 10vw;
     right: 10px;
     bottom: 10px;
     border-radius: 10px;
@@ -139,10 +146,9 @@ body.wrong {
     background-color: gold;
     font-size: 2rem;
     text-transform: uppercase;
-    padding: 20px 10px;
     width: 40vw;
-    height: 10vh;
-    margin-top: 5vh;
+    height: 12vh;
+    margin-top: 33.3vh;
 }
 
 .controls {
@@ -154,39 +160,6 @@ body.wrong {
 .btnGrid {
     display: grid;
     gap: 10px 0px;
-}
-
-#titleContainer {
-    display: flex;
-    width: 80vw;
-    margin: auto;
-    margin-top: 20vh;
-}
-
-.homeTitle {
-    color: gold;
-    display: flex;
-    margin: auto;
-}
-
-@media only screen and (min-width: 650px) {
-    .nameInput {
-        margin-top: 5% !important;
-    }
-}
-
-.nameInput {
-    justify-content: center;
-    align-items: center;
-    margin-top: 20%;
-    margin-left: 25%;
-}
-
-#playerName {
-    width: 40vw;
-    height: 5vh;
-    border-radius: 5px;
-    text-align: center;
 }
 
 .hide {
