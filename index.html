@@ -6,17 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TriviAnimals</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 <body>
 
     <header>
         <div class="header">
-        <h1 class="logo logoBackground">TriviAnimals</h1>
+        <h1 class="logo">TriviAnimals</h1>
         </div>
     </header>
     
     <div class="container">
+        <div class="topnav">
+            <div id="myLinks">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    </ul>
+              <!--<a href="#home">Home</a>
+              <a href="#contact">Contact</a>
+              <a href="#about">About</a>-->
+            </div>
+            <a href="javascript:void(0);" class="navIcon" onclick="mobileNavBar()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
             <!--<form action="javascript:void(0)" method="get" class="playerForm nameInput">
                 <label for="playerName"></label>
                 <input type="text" id="playerName" placeholder="Name" maxlength="12" oninput='highscores(this.value)' required>

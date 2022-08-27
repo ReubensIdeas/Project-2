@@ -15,6 +15,15 @@ nextButton.addEventListener('click', () => {
     setNextQuestion()
 })
 
+function mobileNavBar() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
+    }
+  }
+
 function startGame() {
     startButton.classList.add('hide');
     endScore.classList.add('hide')
