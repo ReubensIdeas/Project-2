@@ -47,56 +47,40 @@ header {
     color: gold;
 }
 }
-#navLinks {
-    display: flex;
-}
 
-ul {
-    margin-left: 40%;
-    list-style-type: none;
-}
-
-li {
-    float: left; 
-    padding: 0 15px;
-}
-      
-a {
-    display: block;
-    padding: 8px;
-    color: gold;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-
-@media only screen and (min-width: 801px) {
-    .navIcon {
-        visibility: hidden;
+@media only screen and (min-width: 550px) {
+    .topnav ul {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
-/* Style the navigation menu */
-@media only screen and (max-width: 800px) {
 .topnav {
-    /*overflow: hidden;*/
     position: relative; 
+    max-width: 100%;
   }
 
-  /* Hide the links inside the navigation menu (except for logo/home) */
+  div ul {
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    border-bottom: 1px solid gold;
+  }
+
   .topnav #myLinks {
     display: none;
   }
   
-  /* Style navigation menu links */
   .topnav a {
     color: gold;
     padding: 15px 15px;
     text-decoration: none;
     font-size: 1.5rem;
-    display: inline-block !important;
+    display: flex;
+    max-width: 80%;
   }
   
-  /* Style the hamburger menu */
   .topnav a.navIcon {
     font-size: 1.5rem;
     display: block;
@@ -106,11 +90,21 @@ a {
     color: gold;
   }
   
-  /* Add a grey background color on mouse-over */
   .topnav a:hover {
     color: gold;
   }
-}
+
+  @media only screen and (max-width: 350px) {
+    .topnav a {
+        color: gold;
+        padding: 15px 15px;
+        text-decoration: none;
+        font-size: 1rem;
+        display: flex;
+        max-width: 80%;
+      }
+  }
+
 
 body.correct {
     --hue: var(--hue-correct);
