@@ -8,6 +8,8 @@ let endScore = document.getElementById('score');
 let score = -10;
 let contactForm = document.getElementById('contactForm');
 let contactLink = document.getElementById('contactLink');
+let homeLink = document.getElementById('homeLink');
+let aboutLink = document.getElementById('aboutLink');
 let controls = document.getElementById('controls');
 
 let shuffledQuestions, currentQuestionIndex;
@@ -17,8 +19,21 @@ nextButton.addEventListener('click', () => {
     setNextQuestion()
 })
 
+homeLink.addEventListener('click', home);
+function home() {
+    questionContainer.classList.add('hide')
+    startButton.classList.remove('hide')
+    contactForm.classList.add('hide')
+}
 contactLink.addEventListener('click', contact);
 function contact() {
+    questionContainer.classList.add('hide')
+    startButton.classList.add('hide')
+    contactForm.classList.remove('hide')
+}
+
+contactLink.addEventListener('click', contact);
+function about() {
     questionContainer.classList.add('hide')
     startButton.classList.add('hide')
     contactForm.classList.remove('hide')
