@@ -6,24 +6,34 @@ let answerButton = document.getElementById('answerButtons');
 let nameInput = document.getElementsByClassName('nameInput');
 let endScore = document.getElementById('score');
 let score = -10;
+let contactForm = document.getElementById('contactForm');
+let contactLink = document.getElementById('contactLink');
+let controls = document.getElementById('controls');
 
 let shuffledQuestions, currentQuestionIndex;
 
-startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     setNextQuestion()
 })
 
-function mobileNavBar() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "flex") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "flex";
-    }
-  }
+contactLink.addEventListener('click', contact);
+function contact() {
+    questionContainer.classList.add('hide')
+    startButton.classList.add('hide')
+    contactForm.classList.remove('hide')
+}
 
+function mobileNavBar() {
+    var myLinks = document.getElementById("myLinks");
+    if (myLinks.style.display === "flex") {
+      myLinks.style.display = "none";
+    } else {
+      myLinks.style.display = "flex";
+    }
+}
+
+startButton.addEventListener('click', startGame); 
 function startGame() {
     startButton.classList.add('hide');
     endScore.classList.add('hide')

@@ -36,7 +36,7 @@ header {
 
 .logo {
     font-size: 3rem;
-    color: gold !important;
+    color: gold;
 }
 
 
@@ -74,7 +74,7 @@ header {
   
   .topnav a {
     color: gold;
-    padding: 15px 15px;
+    padding: 10px 15px;
     text-decoration: none;
     font-size: 1.5rem;
     display: flex;
@@ -216,7 +216,7 @@ body.wrong {
     margin-top: 33.3vh;
 }
 
-.controls {
+#controls {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,4 +229,8 @@ body.wrong {
 
 .hide {
     display: none;
+}
+
+.hidden {
+    visibility: hidden;
 }

@@ -21,22 +21,26 @@
         <div class="topnav">
             <div id="myLinks">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#home" id="homeLink">Home</a></li>
+                    <li><a href="#contact" id="contactLink">Contact</a></li>
+                    <li><a href="#about" id="aboutLink">About</a></li>
                     </ul>
-              <!--<a href="#home">Home</a>
-              <a href="#contact">Contact</a>
-              <a href="#about">About</a>-->
             </div>
             <a href="javascript:void(0);" class="navIcon" onclick="mobileNavBar()">
               <i class="fa fa-bars"></i>
-            </a>
+            </a> 
           </div>
-            <!--<form action="javascript:void(0)" method="get" class="playerForm nameInput">
-                <label for="playerName"></label>
-                <input type="text" id="playerName" placeholder="Name" maxlength="12" oninput='highscores(this.value)' required>
-            </form>-->
+          <div>
+            <form action="javascript:void(0)" method="get" id="contactForm" class="hide">
+                <label for="fname" class="hide">First Name</label><br>
+                <input type="text" id="fname" placeholder="First name" maxlength="15" required><br>
+                <label for="lname" class="hide">Last Name</label><br>
+                <input type="text" id="lnsame" placeholder="Last name"maxlength="15" required><br>
+                <label for="message" class="hide">Message</label><br>
+                <textarea id="message" name="message" placeholder="Enter your message here..." rows="5" cols="50"></textarea><br>
+                <input type="submit" value="send"></input>
+            </form>
+        </div>
         <div id="questionContainer" class="hide">
             <div id="question"><h2>Question</h2></div>
             <div id="answerButtons" class="btnGrid">
@@ -46,7 +50,7 @@
                 <button class="btn">Answer 4</button>
             </div>   
         </div> 
-        <div class="controls">
+        <div id="controls">
             <h1 id="score"></h1>
             <button id="nextBtn" class="nextBtn hide">Next</button>
             <button id="startBtn" class="startBtn btn">Start</button>
