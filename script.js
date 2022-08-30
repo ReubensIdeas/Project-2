@@ -11,6 +11,7 @@ let contactLink = document.getElementById('contactLink');
 let homeLink = document.getElementById('homeLink');
 let aboutLink = document.getElementById('aboutLink');
 let controls = document.getElementById('controls');
+let aboutContainer = document.getElementById('aboutContainer');
 
 let shuffledQuestions, currentQuestionIndex;
 
@@ -29,14 +30,16 @@ contactLink.addEventListener('click', contact);
 function contact() {
     questionContainer.classList.add('hide')
     startButton.classList.add('hide')
+    aboutContainer.classList.add('hide')
     contactForm.classList.remove('hide')
 }
 
-contactLink.addEventListener('click', contact);
+aboutLink.addEventListener('click', about);
 function about() {
     questionContainer.classList.add('hide')
     startButton.classList.add('hide')
-    contactForm.classList.remove('hide')
+    contactForm.classList.add('hide')
+    aboutContainer.classList.remove('hide')
 }
 
 function mobileNavBar() {
