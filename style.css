@@ -6,9 +6,12 @@
     --hue-correct: 145;
 }
 
-#score {
-    color: white;
-    font-size: 2.5rem;
+#highscore {
+    position: relative;
+    display: flex;
+    top: 35%;
+    justify-content: center;
+    color: gold;
 }
 
 * {
@@ -103,8 +106,7 @@ header {
         display: flex;
         max-width: 80%;
       }
-  }
-
+}
 
 body.correct {
     --hue: var(--hue-correct);
@@ -123,6 +125,55 @@ body.wrong {
     background-color: darkslategrey;
     box-shadow: 0 0 10px 2px;
     border-radius: 10px;
+}
+
+@media only screen and (min-width: 650px) {
+    #aboutContainer {
+        top: 30% !important;
+    }
+    #contactForm {
+        margin: 10% auto !important;
+    }
+    #contactForm textarea {
+        width: 50% !important;
+    }
+}
+
+#aboutContainer {
+    position: relative;
+    text-align: center;
+    width: 80%;
+    top: 15%;
+    left: 10%;
+}
+
+#aboutContainer h2 {
+    color: gold;
+    font-size: 2rem;
+}
+
+#aboutContainer p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+#contactForm {
+    position: relative;
+    text-align: center;
+    width: 80%;
+    margin: 50% auto;
+    color: gold;
+}
+
+#contactForm textarea {
+    width: 90%;
+}
+
+input[type=submit] {
+    border-radius: 10px;
+    padding: 5px 15px;
+    background-color: gold;
+    color: #DB163A;
 }
 
 #question {

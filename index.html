@@ -33,11 +33,13 @@
           <!--Contact Form-->
           <div>
             <form action="javascript:void(0)" method="get" id="contactForm" class="hide">
-                <label for="fname" class="hide">First Name</label><br>
+                <label for="fname">First Name</label><br>
                 <input type="text" id="fname" placeholder="First name" maxlength="15" required><br>
-                <label for="lname" class="hide">Last Name</label><br>
-                <input type="text" id="lnsame" placeholder="Last name"maxlength="15" required><br>
-                <label for="message" class="hide">Message</label><br>
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" placeholder="Last name" maxlength="15" required><br>
+                <label for="email">Your email</label><br>
+                <input tpye="email" id="email" placeholder="Your email" required><br>
+                <label for="message">Message</label><br>
                 <textarea id="message" name="message" placeholder="Enter your message here..." rows="5" cols="50"></textarea><br>
                 <input type="submit" value="send"></input>
             </form>
@@ -45,8 +47,8 @@
           <div id="aboutContainer" class="hide">
             <h2>About TriviAnimals</h2><br>
             <p>TriviAnimals is a quiz which will test your knowledge on animals, land, air or water!<br>
-            Simply click, 'START' at the home page and answer the questions by clicking on one of the<br>
-        multiple choice answers you think is correct. Have fun!</p>
+            Simply click, 'START' at the home page and answer the questions by clicking on the<br>
+        multiple choice answer you think is correct.<br><br><strong>Have fun!</strong></p>
           </div>
         <div id="questionContainer" class="hide">
             <div id="question"><h2>Question</h2></div>
@@ -57,8 +59,10 @@
                 <button class="btn">Answer 4</button>
             </div>   
         </div> 
-        <div id="controls">
+        <div id="highscore">
             <h1 id="score"></h1>
+        </div>
+        <div id="controls">
             <button id="nextBtn" class="nextBtn hide">Next</button>
             <button id="startBtn" class="startBtn btn">Start</button>
         </div>
