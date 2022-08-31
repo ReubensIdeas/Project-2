@@ -23,8 +23,9 @@ nextButton.addEventListener('click', () => {
 homeLink.addEventListener('click', home);
 function home() {
     questionContainer.classList.add('hide')
-    startButton.classList.remove('hide')
     contactForm.classList.add('hide')
+    aboutContainer.classList.add('hide')
+    startButton.classList.remove('hide')
 }
 contactLink.addEventListener('click', contact);
 function contact() {
