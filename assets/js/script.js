@@ -16,11 +16,14 @@ let aboutContainer = document.getElementById('aboutContainer');
 let shuffledQuestions, currentQuestionIndex;
 
 nextButton.addEventListener('click', () => {
-    currentQuestionIndex++
-    setNextQuestion()
-})
+    currentQuestionIndex++;
+    console.log(currentQuestionIndex);
+    setNextQuestion();
+    
+});
 
 homeLink.addEventListener('click', home);
+
 function home() {
     questionContainer.classList.add('hide');
     contactForm.classList.add('hide');
@@ -28,6 +31,7 @@ function home() {
     startButton.classList.remove('hide');
 }
 contactLink.addEventListener('click', contact);
+
 function contact() {
     questionContainer.classList.add('hide');
     startButton.classList.add('hide');
@@ -36,6 +40,7 @@ function contact() {
 }
 
 aboutLink.addEventListener('click', about);
+
 function about() {
     questionContainer.classList.add('hide');
     startButton.classList.add('hide');
@@ -44,7 +49,7 @@ function about() {
 }
 
 function mobileNavBar() {
-    const myLinks = document.getElementById("myLinks");
+    var myLinks = document.getElementById("myLinks");
     if (myLinks.style.display === "flex") {
       myLinks.style.display = "none";
     } else {
@@ -65,7 +70,7 @@ function startGame() {
 }
 
 function setNextQuestion() {
-    resetState()
+    resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
@@ -80,13 +85,13 @@ function showQuestion(question) {
         }
         button.addEventListener('click', selectAnswer);
         answerButton.appendChild(button);
-    })
+    });
 }
 
 function resetState() {
     nextButton.classList.add('hide');
     while (answerButton.firstChild) {
-        answerButton.removeChild;
+        answerButton.removeChild
         (answerButton.firstChild);
     }
 }
@@ -97,15 +102,16 @@ function selectAnswer(e) {
     setStatusClass(document.body, correct);
     Array.from(answerButton.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
-    })
+    });
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
+        questionContainer.classList.add('hide');
         startButton.innerHTML = 'Restart';
         startButton.classList.remove('hide');
         endScore.classList.remove('hide');
-        endScore.innerHTML = "You scored " + score + "/" + shuffledQuestions.length;
-        endPopup()
+        endScore.innerHTML = "Well done!\n\n" + "You scored " + score + "/" + shuffledQuestions.length;
+        endPopup();
     }
 }
 
@@ -222,4 +228,4 @@ let questions = [
             {text: 'One', correct: false}
         ]
     }
-]
+];
