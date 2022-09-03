@@ -9,8 +9,9 @@
 #highscore {
     position: relative;
     display: flex;
-    top: 35%;
+    top: 30%;
     justify-content: center;
+    text-align: center;
     color: gold;
 }
 
@@ -136,6 +137,15 @@ body.wrong {
     }
     #contactForm textarea {
         width: 50% !important;
+    }
+    #checkScore {
+        right: 10px !important;
+        bottom: 10px !important;
+        transform: translate(0, 0) !important;
+    }
+    #checkBtn {
+        width: 10vw !important;
+        height: 7vh !important;
     }
 }
 
@@ -277,6 +287,20 @@ input[type=submit] {
 .btnGrid {
     display: grid;
     gap: 10px 0px;
+}
+
+#checkScore {
+    position: absolute;
+    right: 50%;
+    bottom: 5%;
+    transform: translate(50%, 0);
+}
+
+#checkBtn {
+    width: 25vw;
+    height: 10vh;
+    border-radius: 10px;
+    font-size: 1.5rem;
 }
 
 .hide {
