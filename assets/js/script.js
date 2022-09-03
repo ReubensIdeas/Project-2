@@ -1,17 +1,18 @@
-let questionContainer = document.getElementById('questionContainer');
-let questionElement = document.getElementById('question');
-let startButton = document.getElementById('startBtn');
-let nextButton = document.getElementById('nextBtn');
-let answerButton = document.getElementById('answerButtons');
-let nameInput = document.getElementsByClassName('nameInput');
-let endScore = document.getElementById('score');
+const questionContainer = document.getElementById('questionContainer');
+const questionElement = document.getElementById('question');
+const startButton = document.getElementById('startBtn');
+const nextButton = document.getElementById('nextBtn');
+const answerButton = document.getElementById('answerButtons');
+const endScore = document.getElementById('score');
+const contactForm = document.getElementById('contactForm');
+const contactLink = document.getElementById('contactLink');
+const homeLink = document.getElementById('homeLink');
+const aboutLink = document.getElementById('aboutLink');
+const controls = document.getElementById('controls');
+const aboutContainer = document.getElementById('aboutContainer');
+const checkScore = document.getElementById('checkScore');
+const checkBtn = document.getElementById('checkBtn');
 let score = -10;
-let contactForm = document.getElementById('contactForm');
-let contactLink = document.getElementById('contactLink');
-let homeLink = document.getElementById('homeLink');
-let aboutLink = document.getElementById('aboutLink');
-let controls = document.getElementById('controls');
-let aboutContainer = document.getElementById('aboutContainer');
 
 let shuffledQuestions, currentQuestionIndex;
 
@@ -106,12 +107,7 @@ function selectAnswer(e) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
-        questionContainer.classList.add('hide');
-        startButton.innerHTML = 'Restart';
-        startButton.classList.remove('hide');
-        endScore.classList.remove('hide');
-        endScore.innerHTML = "Well done!\n\n" + "You scored " + score + "/" + shuffledQuestions.length;
-        endPopup();
+        checkScore.classList.remove('hide');
     }
 }
 
@@ -135,6 +131,18 @@ function endPopup() {
     if (!startButton) {
         questionContainer.classList.remove('hide');
     }
+}
+
+checkBtn.addEventListener('click', endScreen);
+
+function endScreen() {
+    checkScore.classList.add('hide');
+    questionContainer.classList.add('hide');
+    startButton.innerHTML = 'Restart';
+    startButton.classList.remove('hide');
+    endScore.classList.remove('hide');
+    endScore.innerHTML = "WELL DONE!<br><br>" + "You scored " + score + "/" + shuffledQuestions.length;
+    endPopup();
 }
 
 let questions = [
