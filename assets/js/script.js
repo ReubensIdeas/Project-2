@@ -96,8 +96,8 @@ function resetState() {
     }
 }
 
-function selectAnswer(e) {
-    let selectedButton = e.target;
+function selectAnswer(event) {
+    let selectedButton = event.target;
     var correct = selectedButton.dataset.correct;
     setStatusClass(document.body, correct);
     Array.from(answerButton.children).forEach(button => {
@@ -115,6 +115,7 @@ function setStatusClass(element, correct) {
     if (correct) {
         element.classList.add('correct');
         score++;
+        console.log(score);
     } else {
         element.classList.add('wrong');
     }
@@ -141,5 +142,5 @@ function endScreen() {
     startButton.classList.remove('hide');
     endScore.classList.remove('hide');
     endScore.innerHTML = "WELL DONE!<br><br>" + "You scored " + score + "/" + shuffledQuestions.length;
-    endPopup();
+    score = -10;
 }
