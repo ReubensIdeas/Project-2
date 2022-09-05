@@ -45,17 +45,27 @@ header {
 
 
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 850px) {
 .logo {
     font-size: 2.5rem;
     color: gold;
 }
+.topnav ul {
+    margin-left: auto;
+    margin-right: auto;
+}
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 850px) {
     .topnav ul {
         margin-left: auto;
         margin-right: auto;
+    }
+    .topnav a.navIcon {
+        display: none !important;
+      }
+    .topnav #myLinks {
+        display: flex !important;
     }
 }
 
@@ -64,16 +74,16 @@ header {
     max-width: 100%;
   }
 
+  .topnav #myLinks {
+    display: none;
+}
+
   div ul {
     max-width: 80%;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
     border-bottom: 1px solid gold;
-  }
-
-  .topnav #myLinks {
-    display: none;
   }
   
   .topnav a {
@@ -186,6 +196,11 @@ input[type=submit] {
     color: #DB163A;
 }
 
+input[type=submit]:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 #question {
     font-size: 1.5rem;
     font-weight: 600;
@@ -205,7 +220,17 @@ input[type=submit] {
     text-align: center;
     color: white;
 }
+input[type=text] {
+    width: 20vw;
+    height: 30px;
 }
+
+input[type=email] {
+    width: 20vw;
+    height: 30px;
+}
+}
+
 
 @media only screen and (max-width: 650px) {
     #answerButtons {

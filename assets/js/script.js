@@ -12,15 +12,14 @@ const controls = document.getElementById('controls');
 const aboutContainer = document.getElementById('aboutContainer');
 const checkScore = document.getElementById('checkScore');
 const checkBtn = document.getElementById('checkBtn');
+
 let score = -10;
 
 let shuffledQuestions, currentQuestionIndex;
 
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++;
-    console.log(currentQuestionIndex);
-    setNextQuestion();
-    
+    setNextQuestion();  
 });
 
 homeLink.addEventListener('click', home);
@@ -50,7 +49,7 @@ function about() {
 }
 
 function mobileNavBar() {
-    var myLinks = document.getElementById("myLinks");
+    const myLinks = document.getElementById("myLinks");
     if (myLinks.style.display === "flex") {
       myLinks.style.display = "none";
     } else {
@@ -63,10 +62,10 @@ startButton.addEventListener('click', startGame);
 function startGame() {
     startButton.classList.add('hide');
     endScore.classList.add('hide');
-    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
-    currentQuestionIndex = 0;
     questionContainer.classList.remove('hide');
     nextButton.classList.remove('hide');
+    currentQuestionIndex = 0;
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     setNextQuestion();
 }
 
