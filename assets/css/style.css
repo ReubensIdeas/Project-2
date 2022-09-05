@@ -48,10 +48,6 @@ header {
     font-size: 2.5rem;
     color: gold;
 }
-.topnav ul {
-    margin-left: auto;
-    margin-right: auto;
-}
 }
 
 @media only screen and (min-width: 850px) {
@@ -139,6 +135,7 @@ body.wrong {
 @media only screen and (min-width: 650px) {
     #aboutContainer {
         top: 30% !important;
+        padding: 20px 10px !important;
     }
     #contactForm {
         margin: 10% auto !important;
@@ -155,14 +152,20 @@ body.wrong {
         width: 10vw !important;
         height: 7vh !important;
     }
+    .topnav ul {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 #aboutContainer {
     position: relative;
     text-align: center;
     width: 80%;
-    top: 15%;
+    top: 9%;
     left: 10%;
+    border: 2px dotted gold;
+    padding: 0px 10px;
 }
 
 #aboutContainer h2 {
@@ -178,9 +181,11 @@ body.wrong {
 #contactForm {
     position: relative;
     text-align: center;
-    width: 80%;
-    margin: 50% auto;
+    width: 90%;
+    margin: 35% auto;
     color: gold;
+    border: 2px dotted gold;
+    padding: 20px 0px;
 }
 
 #contactForm textarea {
@@ -227,8 +232,11 @@ input[type=email] {
     width: 20vw;
     height: 30px;
 }
+#nextBtn {
+    width: 10vw !important;
+    height: 7vh !important;
 }
-
+}
 
 @media only screen and (max-width: 650px) {
     #answerButtons {
@@ -272,13 +280,6 @@ input[type=email] {
 .btn.wrong {
     --hue: var(--hue-wrong);
     color: #FFFDD0;
-}
-
-@media only screen and (min-width: 650px) {
-    #nextBtn {
-        width: 10vw !important;
-        height: 7vh !important;
-    }
 }
 
 #nextBtn {
