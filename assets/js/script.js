@@ -32,6 +32,7 @@ function home() {
     questionContainer.classList.add('hide');
     contactForm.classList.add('hide');
     aboutContainer.classList.add('hide');
+    levelCheck.classList.add('hide');
     startButton.classList.remove('hide');
 }
 contactLink.addEventListener('click', contact);
@@ -40,6 +41,7 @@ function contact() {
     questionContainer.classList.add('hide');
     startButton.classList.add('hide');
     aboutContainer.classList.add('hide');
+    levelCheck.classList.add('hide');
     contactForm.classList.remove('hide');
 }
 
@@ -49,6 +51,7 @@ function about() {
     questionContainer.classList.add('hide');
     startButton.classList.add('hide');
     contactForm.classList.add('hide');
+    levelCheck.classList.add('hide');
     aboutContainer.classList.remove('hide');
 }
 
