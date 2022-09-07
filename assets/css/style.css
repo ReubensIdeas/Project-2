@@ -61,6 +61,13 @@ header {
     .topnav #myLinks {
         display: flex !important;
     }
+    #contactForm {
+        margin: 5% auto !important;
+    }
+    #aboutContainer {
+        top: 20% !important;
+        padding: 20px 10px !important;
+    }
 }
 
 .topnav {
@@ -134,11 +141,7 @@ body.wrong {
 
 @media only screen and (min-width: 650px) {
     #aboutContainer {
-        top: 30% !important;
         padding: 20px 10px !important;
-    }
-    #contactForm {
-        margin: 10% auto !important;
     }
     #contactForm textarea {
         width: 50% !important;
@@ -329,6 +332,18 @@ input[type=email] {
     height: 10vh;
     border-radius: 10px;
     font-size: 1.5rem;
+}
+
+#levelCheck {
+    position: absolute;
+    width: 20vw;
+    height: 5vh;
+    bottom: 5%;
+    border: 2px solid white;
+}
+
+#currentLevel {
+    color: gold;
 }
 
 .hide {
