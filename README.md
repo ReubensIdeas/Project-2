@@ -37,6 +37,16 @@ TriviAnimals was created by Reuben Edwards in West Sussex through GitPod.
 
 ![About us on desktop](https://i.imgur.com/Wh6NGzf.png)
 
+### Current question check
+- This feature was added to inform the user of which question they are currently on in comparison to how many questions there are left.
+
+![Current question check on desktop](https://i.imgur.com/V5kDLMa.png)
+
+### Your score
+- This is a feature that was added to the end game screen, which tells the player how many question they scored right, in comparison to how many questions there were.
+
+![Final score on desktop](https://i.imgur.com/iPwgpKa.png)
+
 ## Features left to implement
 - Difficulty levels. I am eager to implement different difficulty levels as it adds variety and more of a challenge.
 - Highscore section. It would be great to add a Highscores section to add a competitive edge, for those looking to beat their (or others) highscores.
