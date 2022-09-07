@@ -8,17 +8,21 @@ const contactForm = document.getElementById('contactForm');
 const contactLink = document.getElementById('contactLink');
 const homeLink = document.getElementById('homeLink');
 const aboutLink = document.getElementById('aboutLink');
-const controls = document.getElementById('controls');
 const aboutContainer = document.getElementById('aboutContainer');
 const checkScore = document.getElementById('checkScore');
 const checkBtn = document.getElementById('checkBtn');
+const myLinks = document.getElementById("myLinks");
+const levelCheck = document.getElementById('levelCheck');
+const currentLevel = document.getElementById('currentLevel');
 
+let level = 1;
 let score = -10;
 
 let shuffledQuestions, currentQuestionIndex;
 
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++;
+    level++;
     setNextQuestion();  
 });
 
@@ -49,7 +53,6 @@ function about() {
 }
 
 function mobileNavBar() {
-    const myLinks = document.getElementById("myLinks");
     if (myLinks.style.display === "flex") {
       myLinks.style.display = "none";
     } else {
@@ -64,6 +67,7 @@ function startGame() {
     endScore.classList.add('hide');
     questionContainer.classList.remove('hide');
     nextButton.classList.remove('hide');
+    levelCheck.classList.remove('hide');
     currentQuestionIndex = 0;
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     setNextQuestion();
@@ -71,6 +75,7 @@ function startGame() {
 
 function setNextQuestion() {
     resetState();
+    currentLevel.innerHTML = "Level " + level + "/10";
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
@@ -143,4 +148,5 @@ function endScreen() {
     endScore.classList.remove('hide');
     endScore.innerHTML = "WELL DONE!<br><br>" + "You scored " + score + "/" + shuffledQuestions.length;
     score = -10;
+    level = 1;
 }
