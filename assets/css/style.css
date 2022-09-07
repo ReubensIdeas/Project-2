@@ -336,14 +336,16 @@ input[type=email] {
 
 #levelCheck {
     position: absolute;
-    width: 20vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.35);
+    width: 30vw;
     height: 5vh;
     bottom: 5%;
-    border: 2px solid white;
 }
 
 #currentLevel {
     color: gold;
+    font-size: 1.5rem;
 }
 
 .hide {
