@@ -9,7 +9,7 @@
 #highscore {
     position: relative;
     display: flex;
-    top: 30%;
+    top: 20%;
     justify-content: center;
     text-align: center;
     color: gold;
@@ -43,7 +43,7 @@ header {
     color: gold;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 800px) {
 .logo {
     font-size: 2.5rem;
     color: gold;
@@ -147,14 +147,13 @@ body.wrong {
     text-align: center;
 }
 
-#home h1 {
+#home h2 {
     color: gold;
-    font-size: 2rem;
 }
 
 #home p {
     color: white;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 @media only screen and (min-width: 650px) {
@@ -182,6 +181,9 @@ body.wrong {
     }
     #home {
         top: 20% !important;
+    }
+    #home h2 {
+        font-size: 2rem;
     }
     #question {
         font-size: 2.5rem;
@@ -267,6 +269,10 @@ input[type=submit]:hover {
         margin: 20% 37%;
         width: 50vw;
     }
+    #score {
+        font-size: 1.5rem;
+        margin-bottom: 30%;
+    }
   }
 
 #answerButtons {
@@ -327,7 +333,7 @@ input[type=submit]:hover {
     text-transform: uppercase;
     width: 40vw;
     height: 12vh;
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 #controls {
