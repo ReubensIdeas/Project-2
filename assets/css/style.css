@@ -139,6 +139,24 @@ body.wrong {
     border-radius: 10px;
 }
 
+#home {
+    position: relative;
+    top: 5%;
+    width: 80%;
+    left: 10%;
+    text-align: center;
+}
+
+#home h1 {
+    color: gold;
+    font-size: 2rem;
+}
+
+#home p {
+    color: white;
+    font-size: 1.3rem;
+}
+
 @media only screen and (min-width: 650px) {
     #aboutContainer {
         padding: 20px 10px !important;
@@ -155,9 +173,36 @@ body.wrong {
         width: 10vw !important;
         height: 7vh !important;
     }
+    #startBtn {
+        margin-top: 33.3vh !important;
+    }
     .topnav ul {
         margin-left: auto;
         margin-right: auto;
+    }
+    #home {
+        top: 20% !important;
+    }
+    #question {
+        font-size: 2.5rem;
+        font-weight: 600;
+        width: 80vw;
+        margin: auto;
+        text-align: center;
+        color: white;
+    }
+    input[type=text] {
+        width: 20vw;
+        height: 30px;
+    }
+    
+    input[type=email] {
+        width: 20vw;
+        height: 30px;
+    }
+    #nextBtn {
+        width: 10vw !important;
+        height: 7vh !important;
     }
 }
 
@@ -215,30 +260,6 @@ input[type=submit]:hover {
     padding-top: 20px;
     text-align: center;
     color: white;
-}
-
-@media only screen and (min-width: 650px) {
-#question {
-    font-size: 2.5rem;
-    font-weight: 600;
-    width: 80vw;
-    margin: auto;
-    text-align: center;
-    color: white;
-}
-input[type=text] {
-    width: 20vw;
-    height: 30px;
-}
-
-input[type=email] {
-    width: 20vw;
-    height: 30px;
-}
-#nextBtn {
-    width: 10vw !important;
-    height: 7vh !important;
-}
 }
 
 @media only screen and (max-width: 650px) {
@@ -306,7 +327,7 @@ input[type=email] {
     text-transform: uppercase;
     width: 40vw;
     height: 12vh;
-    margin-top: 33.3vh;
+    margin-top: 10vh;
 }
 
 #controls {
