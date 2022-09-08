@@ -14,6 +14,7 @@ const checkBtn = document.getElementById('checkBtn');
 const myLinks = document.getElementById("myLinks");
 const levelCheck = document.getElementById('levelCheck');
 const currentLevel = document.getElementById('currentLevel');
+const homeSection = document.getElementById('home');
 
 let level = 1;
 let score = -10;
@@ -33,12 +34,14 @@ function home() {
     contactForm.classList.add('hide');
     aboutContainer.classList.add('hide');
     levelCheck.classList.add('hide');
+    homeSection.classList.remove('hide');
     startButton.classList.remove('hide');
 }
 contactLink.addEventListener('click', contact);
 
 function contact() {
     questionContainer.classList.add('hide');
+    homeSection.classList.add('hide');
     startButton.classList.add('hide');
     aboutContainer.classList.add('hide');
     levelCheck.classList.add('hide');
@@ -49,6 +52,7 @@ aboutLink.addEventListener('click', about);
 
 function about() {
     questionContainer.classList.add('hide');
+    homeSection.classList.add('hide');
     startButton.classList.add('hide');
     contactForm.classList.add('hide');
     levelCheck.classList.add('hide');
@@ -67,6 +71,7 @@ startButton.addEventListener('click', startGame);
 
 function startGame() {
     startButton.classList.add('hide');
+    homeSection.classList.add('hide');
     endScore.classList.add('hide');
     questionContainer.classList.remove('hide');
     nextButton.classList.remove('hide');
