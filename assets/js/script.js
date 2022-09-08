@@ -34,6 +34,7 @@ function home() {
     contactForm.classList.add('hide');
     aboutContainer.classList.add('hide');
     levelCheck.classList.add('hide');
+    endScore.classList.add('hide');
     homeSection.classList.remove('hide');
     startButton.classList.remove('hide');
 }
@@ -44,6 +45,7 @@ function contact() {
     homeSection.classList.add('hide');
     startButton.classList.add('hide');
     aboutContainer.classList.add('hide');
+    endScore.classList.add('hide');
     levelCheck.classList.add('hide');
     contactForm.classList.remove('hide');
 }
@@ -55,6 +57,7 @@ function about() {
     homeSection.classList.add('hide');
     startButton.classList.add('hide');
     contactForm.classList.add('hide');
+    endScore.classList.add('hide');
     levelCheck.classList.add('hide');
     aboutContainer.classList.remove('hide');
 }
@@ -128,7 +131,6 @@ function setStatusClass(element, correct) {
     if (correct) {
         element.classList.add('correct');
         score++;
-        console.log(score);
     } else {
         element.classList.add('wrong');
     }
