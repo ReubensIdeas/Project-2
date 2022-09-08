@@ -62,6 +62,14 @@ TriviAnimals was created by Reuben Edwards in West Sussex through GitPod.
 - JavaScript
 > No errors were found when passing through the [JSHint validator](https://jshint.com/)
 
+## Speed test
+- Performance: 97
+- Accessibility: 100
+- Best Practices: 75
+- SEO: 78
+
+![Lighthouse check](https://i.imgur.com/PeZ5hhW.png)
+
 # Deployment
 <hr>
 
