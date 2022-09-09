@@ -15,6 +15,7 @@ const myLinks = document.getElementById("myLinks");
 const levelCheck = document.getElementById('levelCheck');
 const currentLevel = document.getElementById('currentLevel');
 const homeSection = document.getElementById('home');
+const highscore = document.getElementById('highscore');
 
 let level = 1;
 let score = -10;
@@ -31,6 +32,7 @@ homeLink.addEventListener('click', home);
 
 function home() {
     questionContainer.classList.add('hide');
+    nextButton.classList.add('hide');
     contactForm.classList.add('hide');
     aboutContainer.classList.add('hide');
     levelCheck.classList.add('hide');
@@ -42,6 +44,7 @@ contactLink.addEventListener('click', contact);
 
 function contact() {
     questionContainer.classList.add('hide');
+    nextButton.classList.add('hide');
     homeSection.classList.add('hide');
     startButton.classList.add('hide');
     aboutContainer.classList.add('hide');
@@ -54,6 +57,7 @@ aboutLink.addEventListener('click', about);
 
 function about() {
     questionContainer.classList.add('hide');
+    nextButton.classList.add('hide');
     homeSection.classList.add('hide');
     startButton.classList.add('hide');
     contactForm.classList.add('hide');
@@ -73,12 +77,14 @@ function mobileNavBar() {
 startButton.addEventListener('click', startGame); 
 
 function startGame() {
+    score = -10;
+    level = 1;
     startButton.classList.add('hide');
     homeSection.classList.add('hide');
     endScore.classList.add('hide');
-    questionContainer.classList.remove('hide');
     nextButton.classList.remove('hide');
     levelCheck.classList.remove('hide');
+    questionContainer.classList.remove('hide');
     currentQuestionIndex = 0;
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     setNextQuestion();
@@ -86,7 +92,7 @@ function startGame() {
 
 function setNextQuestion() {
     resetState();
-    currentLevel.innerHTML = "Level " + level + "/10";
+    currentLevel.innerHTML = "Question " + level + "/10";
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
