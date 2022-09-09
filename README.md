@@ -63,12 +63,21 @@ TriviAnimals was created by Reuben Edwards in West Sussex through GitPod.
 > No errors were found when passing through the [JSHint validator](https://jshint.com/)
 
 ## Speed test
+### Desktop
 - Performance: 97
 - Accessibility: 100
 - Best Practices: 75
 - SEO: 78
 
-![Lighthouse check](https://i.imgur.com/PeZ5hhW.png)
+![Lighthouse check desktop](https://i.imgur.com/PeZ5hhW.png)
+
+### Mobile
+- Performance: 93
+- Accessibility: 95
+- Best Practices: 75
+- SEO: 82
+
+![Lighthouse check mobile](https://i.imgur.com/sWX4qqt.png)
 
 # Deployment
 <hr>
@@ -85,7 +94,6 @@ TriviAnimals was created by Reuben Edwards in West Sussex through GitPod.
 ## Content
 - The font used for the TriviAnimals website was, ‘Edu SA Beginner’ and was taken from [Google Fonts](https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap).
 - The mobile/tablet navigation bar was inspired by a tutorial from [W3Schools](https://www.w3schools.com/howto/howto_js_mobile_navbar.asp).
-- The Workout Card section was taken from [W3Schools](https://www.w3schools.com/howto/howto_css_cards.asp).
 - The icon in the mobile/tablet navigation bar was taken from [Font Awesome](https://fontawesome.com/).
 
 ## Media
