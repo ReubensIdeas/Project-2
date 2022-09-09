@@ -328,12 +328,13 @@ input[type=submit]:hover {
 }
 
 #startBtn {
+    z-index: 3;
     background-color: gold;
     font-size: 2rem;
     text-transform: uppercase;
     width: 40vw;
     height: 12vh;
-    margin-top: 5vh;
+    margin-top: 10vh;
 }
 
 #controls {
@@ -349,6 +350,7 @@ input[type=submit]:hover {
 
 #checkScore {
     position: absolute;
+    z-index: 3;
     right: 50%;
     bottom: 5%;
     transform: translate(50%, 0);
